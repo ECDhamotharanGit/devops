@@ -2,24 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Business - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simple Business</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Simple Business</h1>
-        <nav>
+<body class="contact-page">
+    <header class="contact-header">
+        <div class="hero-text">
+            <h1>Get in Touch</h1>
+            <p>We’re here to help. Reach out to us anytime!</p>
+        </div>
+        <nav aria-label="Main Navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
-    <main>
-        <h2>Contact Us</h2>
-        <p>Email: contact@simplebusiness.com</p>
-        <p>Phone: +1 234 567 890</p>
+
+    <main class="contact-main">
+        <section class="contact-card contact-info">
+            <h2>📍 Contact Details</h2>
+            <p><strong>Email:</strong> <a href="mailto:contact@simplebusiness.com">contact@simplebusiness.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p><strong>Address:</strong> 123 Startup Lane, Innovation City, USA</p>
+        </section>
+
+        <section class="contact-card contact-form">
+            <h2>✉️ Send a Message</h2>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+
+                <button type="submit">🚀 Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-card contact-social">
+            <h2>🌐 Follow Us</h2>
+            <ul>
+                <li><a href="#">🔵 Facebook</a></li>
+                <li><a href="#">🐦 Twitter</a></li>
+                <li><a href="#">📸 Instagram</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
+
+    <footer class="contact-footer">
         <p>&copy; 2025 Simple Business. All rights reserved.</p>
     </footer>
 </body>
