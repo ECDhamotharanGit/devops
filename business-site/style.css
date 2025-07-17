@@ -1,35 +1,116 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f9fa;
-    color: #333;
+body.contact-page {
+    background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
 }
 
-header {
-    background: #007BFF;
+.contact-header {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
     color: white;
-    padding: 20px 0;
+    padding: 3rem 1rem 1rem;
     text-align: center;
+    border-bottom: 4px solid #3498db;
 }
 
-header nav a {
+.contact-header .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header .hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.contact-header nav {
+    margin-top: 1rem;
+}
+
+.contact-header nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 1rem;
+    font-weight: bold;
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-    text-align: center;
+.contact-header nav a:hover {
+    text-decoration: underline;
 }
 
-footer {
-    background: #343a40;
+.contact-main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+.contact-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.02);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline-color: #2980b9;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #2980b9;
     color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+.contact-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-social a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2980b9;
+    font-size: 1.1rem;
+}
+
+.contact-social a:hover {
+    text-decoration: underline;
+}
+
+.contact-footer {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #ecf0f1;
+    margin-top: 3rem;
+    border-top: 1px solid #ccc;
 }
