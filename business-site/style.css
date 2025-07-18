@@ -1,3 +1,96 @@
+body.contact-page {
+    background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+}
+
+.contact-header {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    color: white;
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #3498db;
+}
+
+.contact-header .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-header .hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.contact-header nav {
+    margin-top: 1rem;
+}
+
+.contact-header nav a {
+    color: white;
+    margin: 0 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline-color: #2980b9;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #2980b9;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+.contact-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-social a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2980b9;
+    font-size: 1.1rem;
+}
+
+.contact-social a:hover {
+    text-decoration: underline;
+}
+
+.contact-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #ecf0f1;
+    margin-top: 3rem;
+    border-top: 1px solid #ccc;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,3 +127,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
